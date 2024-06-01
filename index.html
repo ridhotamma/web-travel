@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Jama'ah Haji</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
 </head>
+
 <body class="bg-gray-100">
     <!-- Hero Section -->
-    <section class="bg-blue-600 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Perjalanan Haji yang Berkah dan Nyaman</h1>
-            <p class="text-xl mb-8">Bersama Kami, Raih Ketenangan dalam Setiap Langkah Ibadah Anda</p>
-            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Daftar Sekarang</a>
+    <section class="splide" id="hero-slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide bg-blue-600 text-white" style="height: 100vh;">
+                    <div class="container mx-auto text-center flex items-center justify-center h-full">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-4">Perjalanan Haji yang Berkah dan Nyaman</h1>
+                            <p class="text-xl mb-8">Bersama Kami, Raih Ketenangan dalam Setiap Langkah Ibadah Anda</p>
+                            <a href="#contact"
+                                class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Daftar
+                                Sekarang</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide bg-blue-800 text-white" style="height: 100vh;">
+                    <div class="container mx-auto text-center flex items-center justify-center h-full">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-4">Nikmati Layanan Haji Terbaik</h1>
+                            <p class="text-xl mb-8">Dengan Fasilitas Eksklusif dan Pembimbing Berpengalaman</p>
+                            <a href="#contact"
+                                class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Pelajari
+                                Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add more slides as needed -->
+            </ul>
         </div>
     </section>
 
@@ -21,21 +48,28 @@
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">Layanan Unggulan Kami</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-plane text-blue-600 text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
-                    <p>Nikmati layanan eksklusif dengan akomodasi terbaik, bimbingan dari ustadz berpengalaman, dan fasilitas premium lainnya.</p>
+                    <p>Nikmati layanan eksklusif dengan akomodasi terbaik, bimbingan dari ustadz berpengalaman, dan
+                        fasilitas premium lainnya.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-kaaba text-blue-600 text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
-                    <p>Paket terjangkau dengan fasilitas lengkap untuk memastikan kenyamanan dan keamanan ibadah Anda.</p>
+                    <p>Paket terjangkau dengan fasilitas lengkap untuk memastikan kenyamanan dan keamanan ibadah Anda.
+                    </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-mosque text-blue-600 text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Bimbingan Manasik Haji</h3>
                     <p>Pelatihan intensif untuk memahami dan melaksanakan setiap rukun dan wajib haji dengan benar.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-passport text-blue-600 text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Layanan Visa dan Dokumen</h3>
-                    <p>Kami mengurus semua keperluan administrasi dan dokumen perjalanan Anda dengan cepat dan tepat.</p>
+                    <p>Kami mengurus semua keperluan administrasi dan dokumen perjalanan Anda dengan cepat dan tepat.
+                    </p>
                 </div>
             </div>
         </div>
@@ -45,84 +79,106 @@
     <section class="py-20 bg-gray-100">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">Katalog Layanan Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
-                    <p>Durasi: 40 hari</p>
-                    <p>Fasilitas:</p>
-                    <ul class="list-disc pl-6">
-                        <li>Tiket pesawat pulang pergi</li>
-                        <li>Akomodasi hotel bintang 3 di Mekkah dan Madinah</li>
-                        <li>Transportasi bus ber-AC</li>
-                        <li>Visa haji</li>
-                        <li>Makanan 3 kali sehari</li>
-                        <li>Pembimbing ibadah haji</li>
-                        <li>Manasik haji sebelum keberangkatan</li>
-                        <li>Perlengkapan haji (koper, tas, mukena/ihrom, dll)</li>
+            <div class="splide" id="katalog-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Haji Reguler"
+                                class="w-24 h-24 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
+                            <p>Durasi: 40 hari</p>
+                            <p>Fasilitas:</p>
+                            <ul class="list-disc pl-6 text-left">
+                                <li>Tiket pesawat pulang pergi</li>
+                                <li>Akomodasi hotel bintang 3 di Mekkah dan Madinah</li>
+                                <li>Transportasi bus ber-AC</li>
+                                <li>Visa haji</li>
+                                <li>Makanan 3 kali sehari</li>
+                                <li>Pembimbing ibadah haji</li>
+                                <li>Manasik haji sebelum keberangkatan</li>
+                                <li>Perlengkapan haji (koper, tas, mukena/ihrom, dll)</li>
+                            </ul>
+                        </li>
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Haji Plus"
+                                class="w-24 h-24 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
+                            <p>Durasi: 25 hari</p>
+                            <p>Fasilitas:</p>
+                            <ul class="list-disc pl-6 text-left">
+                                <li>Tiket pesawat pulang pergi</li>
+                                <li>Akomodasi hotel bintang 4 di Mekkah dan Madinah</li>
+                                <li>Transportasi bus ber-AC</li>
+                                <li>Visa haji</li>
+                                <li>Makanan 3 kali sehari</li>
+                                <li>Pembimbing ibadah haji</li>
+                                <li>Manasik haji sebelum keberangkatan</li>
+                                <li>Perlengkapan haji (koper, tas, mukena/ihrom, dll)</li>
+                                <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
+                            </ul>
+                        </li>
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh Reguler"
+                                class="w-24 h-24 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-4">Paket Umroh Reguler</h3>
+                            <p>Durasi: 9 hari</p>
+                            <p>Fasilitas:</p>
+                            <ul class="list-disc pl-6 text-left">
+                                <li>Tiket pesawat pulang pergi</li>
+                                <li>Akomodasi hotel bintang 3 di Mekkah dan Madinah</li>
+                                <li>Transportasi bus ber-AC</li>
+                                <li>Visa umroh</li>
+                                <li>Makanan 3 kali sehari</li>
+                                <li>Pembimbing ibadah umroh</li>
+                                <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
+                            </ul>
+                        </li>
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh VIP"
+                                class="w-24 h-24 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-4">Paket Umroh VIP</h3>
+                            <p>Durasi: 12 hari</p>
+                            <p>Fasilitas:</p>
+                            <ul class="list-disc pl-6 text-left">
+                                <li>Tiket pesawat pulang pergi kelas bisnis</li>
+                                <li>Akomodasi hotel bintang 5 di Mekkah dan Madinah</li>
+                                <li>Transportasi bus mewah ber-AC</li>
+                                <li>Visa umroh</li>
+                                <li>Makanan 3 kali sehari</li>
+                                <li>Pembimbing ibadah umroh</li>
+                                <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
+                                <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
+                                <li>Tour guide profesional</li>
+                            </ul>
+                        </li>
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh Plus Wisata"
+                                class="w-24 h-24 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-4">Paket Umroh Plus Wisata</h3>
+                            <p>Durasi: 14 hari</p>
+                            <p>Fasilitas:</p>
+                            <ul class="list-disc pl-6 text-left">
+                                <li>Tiket pesawat pulang pergi</li>
+                                <li>Akomodasi hotel bintang 4 di Mekkah dan Madinah</li>
+                                <li>Transportasi bus ber-AC</li>
+                                <li>Visa umroh</li>
+                                <li>Makanan 3 kali sehari</li>
+                                <li>Pembimbing ibadah umroh</li>
+                                <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
+                                <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
+                                <li>Wisata ke negara lain (misalnya Turki, Mesir, atau Yordania)</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
-                    <p>Durasi: 25 hari</p>
-                    <p>Fasilitas:</p>
-                    <ul class="list-disc pl-6">
-                        <li>Tiket pesawat pulang pergi</li>
-                        <li>Akomodasi hotel bintang 4 di Mekkah dan Madinah</li>
-                        <li>Transportasi bus ber-AC</li>
-                        <li>Visa haji</li>
-                        <li>Makanan 3 kali sehari</li>
-                        <li>Pembimbing ibadah haji</li>
-                        <li>Manasik haji sebelum keberangkatan</li>
-                        <li>Perlengkapan haji (koper, tas, mukena/ihrom, dll)</li>
-                        <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Paket Umroh Reguler</h3>
-                    <p>Durasi: 9 hari</p>
-                    <p>Fasilitas:</p>
-                    <ul class="list-disc pl-6">
-                        <li>Tiket pesawat pulang pergi</li>
-                        <li>Akomodasi hotel bintang 3 di Mekkah dan Madinah</li>
-                        <li>Transportasi bus ber-AC</li>
-                        <li>Visa umroh</li>
-                        <li>Makanan 3 kali sehari</li>
-                        <li>Pembimbing ibadah umroh</li>
-                        <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Paket Umroh VIP</h3>
-                    <p>Durasi: 12 hari</p>
-                    <p>Fasilitas:</p>
-                    <ul class="list-disc pl-6">
-                        <li>Tiket pesawat pulang pergi kelas bisnis</li>
-                        <li>Akomodasi hotel bintang 5 di Mekkah dan Madinah</li>
-                        <li>Transportasi bus mewah ber-AC</li>
-                        <li>Visa umroh</li>
-                        <li>Makanan 3 kali sehari</li>
-                        <li>Pembimbing ibadah umroh</li>
-                        <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
-                        <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
-                        <li>Tour guide profesional</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Paket Umroh Plus Wisata</h3>
-                    <p>Durasi: 14 hari</p>
-                    <p>Fasilitas:</p>
-                    <ul class="list-disc pl-6">
-                        <li>Tiket pesawat pulang pergi</li>
-                        <li>Akomodasi hotel bintang 4 di Mekkah dan Madinah</li>
-                        <li>Transportasi bus ber-AC</li>
-                        <li>Visa umroh</li>
-                        <li>Makanan 3 kali sehari</li>
-                        <li>Pembimbing ibadah umroh</li>
-                        <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
-                        <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
-                        <li>Wisata ke negara lain (misalnya Turki, Mesir, atau Yordania)</li>
-                    </ul>
-                </div>
+            </div>
+            <div class="mt-6 text-center flex items-center justify-center gap-2">
+                <button class="bg-gray-400 text-white font-bold rounded-full h-12 w-12 flex justify-center items-center">
+                    <i class="fas fa-arrow-left fa-lg text-white"></i>
+                </button>
+                <button class="bg-gray-400 text-white font-bold rounded-full h-12 w-12 flex justify-center items-center">
+                    <i class="fas fa-arrow-right fa-lg"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -132,16 +188,22 @@
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">Apa Kata Jama'ah Kami?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="italic mb-4">"Perjalanan haji saya bersama [Nama Travel] sangat berkesan. Semua fasilitasnya lengkap dan pelayanannya sangat ramah. Terima kasih!"</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <p class="italic mb-4">"Perjalanan haji saya bersama [Nama Travel] sangat berkesan. Semua
+                        fasilitasnya lengkap dan pelayanannya sangat ramah. Terima kasih!"</p>
                     <p class="font-semibold">Ahmad S.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="italic mb-4">"Bimbingan manasik haji dari [Nama Travel] sangat membantu saya dalam memahami setiap proses ibadah. Sangat direkomendasikan!"</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <p class="italic mb-4">"Bimbingan manasik haji dari [Nama Travel] sangat membantu saya dalam
+                        memahami setiap proses ibadah. Sangat direkomendasikan!"</p>
                     <p class="font-semibold">Aisyah L.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="italic mb-4">"Layanan yang diberikan sangat memuaskan. Mulai dari pengurusan visa hingga perjalanan pulang, semua berjalan lancar dan nyaman."</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <p class="italic mb-4">"Layanan yang diberikan sangat memuaskan. Mulai dari pengurusan visa hingga
+                        perjalanan pulang, semua berjalan lancar dan nyaman."</p>
                     <p class="font-semibold">Hendri T.</p>
                 </div>
             </div>
@@ -152,9 +214,41 @@
     <section id="contact" class="py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-8">Hubungi Kami</h2>
-            <p class="text-xl mb-8">Untuk informasi lebih lanjut mengenai paket dan layanan kami, jangan ragu untuk menghubungi kami melalui saluran berikut:</p>
-            <a href="https://wa.me/[NomorWhatsAppAnda]" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Hubungi Kami Sekarang</a>
+            <p class="text-xl mb-8">Untuk informasi lebih lanjut mengenai paket dan layanan kami, jangan ragu untuk
+                menghubungi kami melalui saluran berikut:</p>
+            <a href="https://wa.me/[NomorWhatsAppAnda]"
+                class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Hubungi Kami
+                Sekarang</a>
         </div>
     </section>
 </body>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#hero-slider', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+        }).mount();
+
+        new Splide('#katalog-slider', {
+            type: 'loop',
+            perPage: 3,
+            gap: '1em',
+            arrows: false,
+            breakpoints: {
+                1024: {
+                    perPage: 2,
+                },
+                768: {
+                    perPage: 1,
+                },
+            },
+            autoplay: true,
+            pagination: false
+        }).mount();
+    });
+</script>
+
 </html>
