@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Jama'ah Haji</title>
+    <title>Travel Jama'ah Haji - Perjalanan Haji dan Umroh Terbaik</title>
+    <meta name="description"
+        content="Travel Jama'ah Haji menyediakan perjalanan haji dan umroh terbaik dengan layanan eksklusif, fasilitas lengkap, dan bimbingan dari ustadz berpengalaman.">
+    <meta name="keywords"
+        content="Travel Haji, Umroh, Perjalanan Haji, Paket Haji, Paket Umroh, Bimbingan Manasik Haji, Layanan Visa">
+    <meta name="author" content="Travel Jama'ah Haji">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
@@ -225,10 +230,9 @@
     </section>
 </body>
 
-
 <script>
-    const katalogBtnPrev = document.querySelector('#katalog-button-prev')
-    const katalogBtnNext = document.querySelector('#katalog-button-next')
+    const katalogBtnPrev = document.querySelector('#katalog-button-prev');
+    const katalogBtnNext = document.querySelector('#katalog-button-next');
 
     document.addEventListener('DOMContentLoaded', function () {
         new Splide('#hero-slider', {
@@ -260,12 +264,12 @@
         }).mount();
 
         katalogBtnPrev.addEventListener('click', () => {
-            katalogSlider.go('<')
-        })
+            katalogSlider.go('<');
+        });
 
         katalogBtnNext.addEventListener('click', () => {
-            katalogSlider.go('>')
-        })
+            katalogSlider.go('>');
+        });
     });
 </script>
 
