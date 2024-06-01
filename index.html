@@ -16,13 +16,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
 </head>
 
+<style>
+    .slide-bg-1 {
+        background-image: url('https://images.unsplash.com/photo-1551041777-ed277b8dd348?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slide-bg-2 {
+        background-image: url('https://images.unsplash.com/photo-1633546707050-88e2b545831c?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+    }
+
+    .btn-primary {
+        background-color: white;
+        color: #1c64f2;
+        padding: 0.75rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #e5e7eb;
+    }
+</style>
+
 <body class="bg-gray-100">
     <!-- Hero Section -->
     <section class="splide" id="hero-slider">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide bg-blue-600 text-white" style="height: 100vh;">
-                    <div class="container mx-auto text-center flex items-center justify-center h-full">
+                <li class="splide__slide slide-bg-1 text-white h-screen relative">
+                    <div class="absolute h-screen w-full top-0 left-0 bg-black bg-opacity-50"></div>
+                    <div class="relative z-10 container mx-auto text-center flex items-center justify-center h-full">
                         <div>
                             <h1 class="text-4xl font-bold mb-4">Perjalanan Haji yang Berkah dan Nyaman</h1>
                             <p class="text-xl mb-8">Bersama Kami, Raih Ketenangan dalam Setiap Langkah Ibadah Anda</p>
@@ -32,8 +65,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="splide__slide bg-blue-800 text-white" style="height: 100vh;">
-                    <div class="container mx-auto text-center flex items-center justify-center h-full">
+                <li class="splide__slide slide-bg-2 text-white h-screen relative">
+                    <div class="absolute h-screen w-full top-0 left-0 bg-black bg-opacity-50"></div>
+                    <div class="relative z-10 container mx-auto text-center flex items-center justify-center h-full">
                         <div>
                             <h1 class="text-4xl font-bold mb-4">Nikmati Layanan Haji Terbaik</h1>
                             <p class="text-xl mb-8">Dengan Fasilitas Eksklusif dan Pembimbing Berpengalaman</p>
@@ -54,24 +88,24 @@
             <h2 class="text-3xl font-bold text-center mb-12">Layanan Unggulan Kami</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-plane text-blue-600 text-5xl mb-4"></i>
+                    <i class="fas fa-plane text-black text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
                     <p>Nikmati layanan eksklusif dengan akomodasi terbaik, bimbingan dari ustadz berpengalaman, dan
                         fasilitas premium lainnya.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-kaaba text-blue-600 text-5xl mb-4"></i>
+                    <i class="fas fa-kaaba text-black text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
                     <p>Paket terjangkau dengan fasilitas lengkap untuk memastikan kenyamanan dan keamanan ibadah Anda.
                     </p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-mosque text-blue-600 text-5xl mb-4"></i>
+                    <i class="fas fa-mosque text-black text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Bimbingan Manasik Haji</h3>
                     <p>Pelatihan intensif untuk memahami dan melaksanakan setiap rukun dan wajib haji dengan benar.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-passport text-blue-600 text-5xl mb-4"></i>
+                    <i class="fas fa-passport text-black text-5xl mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Layanan Visa dan Dokumen</h3>
                     <p>Kami mengurus semua keperluan administrasi dan dokumen perjalanan Anda dengan cepat dan tepat.
                     </p>
@@ -87,9 +121,9 @@
             <div class="splide" id="katalog-slider">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
-                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Haji Reguler"
-                                class="w-24 h-24 mx-auto mb-4">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                            <img src="https://plus.unsplash.com/premium_photo-1678373453759-cb3a3dc2e2e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Illustrasi Paket Haji Reguler" class="w-full h-48 mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
                             <p>Durasi: 40 hari</p>
                             <p>Fasilitas:</p>
@@ -104,9 +138,9 @@
                                 <li>Perlengkapan haji (koper, tas, mukena/ihrom, dll)</li>
                             </ul>
                         </li>
-                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
-                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Haji Plus"
-                                class="w-24 h-24 mx-auto mb-4">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                            <img src="https://plus.unsplash.com/premium_photo-1678373453759-cb3a3dc2e2e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Illustrasi Paket Haji Plus" class="w-full h-48 mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
                             <p>Durasi: 25 hari</p>
                             <p>Fasilitas:</p>
@@ -122,9 +156,9 @@
                                 <li>Kunjungan ke tempat bersejarah di Mekkah dan Madinah</li>
                             </ul>
                         </li>
-                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
-                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh Reguler"
-                                class="w-24 h-24 mx-auto mb-4">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                            <img src="https://plus.unsplash.com/premium_photo-1678373453759-cb3a3dc2e2e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Illustrasi Paket Umroh Reguler" class="w-full h-48 mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold mb-4">Paket Umroh Reguler</h3>
                             <p>Durasi: 9 hari</p>
                             <p>Fasilitas:</p>
@@ -138,9 +172,9 @@
                                 <li>Perlengkapan umroh (koper, tas, mukena/ihrom, dll)</li>
                             </ul>
                         </li>
-                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
-                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh VIP"
-                                class="w-24 h-24 mx-auto mb-4">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                            <img src="https://plus.unsplash.com/premium_photo-1678373453759-cb3a3dc2e2e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Illustrasi Paket Umroh VIP" class="w-full h-48 mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold mb-4">Paket Umroh VIP</h3>
                             <p>Durasi: 12 hari</p>
                             <p>Fasilitas:</p>
@@ -156,9 +190,9 @@
                                 <li>Tour guide profesional</li>
                             </ul>
                         </li>
-                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg text-center">
-                            <img src="https://via.placeholder.com/150" alt="Illustrasi Paket Umroh Plus Wisata"
-                                class="w-24 h-24 mx-auto mb-4">
+                        <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                            <img src="https://plus.unsplash.com/premium_photo-1678373453759-cb3a3dc2e2e6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Illustrasi Paket Umroh Plus Wisata" class="w-full h-48 mx-auto mb-4 object-cover">
                             <h3 class="text-xl font-semibold mb-4">Paket Umroh Plus Wisata</h3>
                             <p>Durasi: 14 hari</p>
                             <p>Fasilitas:</p>
@@ -196,19 +230,43 @@
             <h2 class="text-3xl font-bold text-center mb-12">Apa Kata Jama'ah Kami?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <img src="https://images.unsplash.com/photo-1652946619040-1388aa7e819f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Illustrasi Paket Umroh Plus Wisata" class="w-full h-48 mx-auto mb-4 object-cover">
+                    <div class="flex justify-center mb-4">
+                        <span class="text-3xl text-yellow-500">&#9733;</span>
+                        <span class="text-3xl text-yellow-500">&#9733;</span>
+                        <span class="text-3xl text-yellow-500">&#9733;</span>
+                        <span class="text-3xl text-yellow-500">&#9733;</span>
+                        <span class="text-3xl text-yellow-500">&#9733;</span>
+                    </div>
                     <p class="italic mb-4">"Perjalanan haji saya bersama [Nama Travel] sangat berkesan. Semua
                         fasilitasnya lengkap dan pelayanannya sangat ramah. Terima kasih!"</p>
                     <p class="font-semibold">Ahmad S.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <img src="https://images.unsplash.com/photo-1652946619040-1388aa7e819f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Illustrasi Paket Umroh Plus Wisata" class="w-full h-48 mx-auto mb-4 object-cover">
+                        <div class="flex justify-center mb-4">
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                        </div>
                     <p class="italic mb-4">"Bimbingan manasik haji dari [Nama Travel] sangat membantu saya dalam
                         memahami setiap proses ibadah. Sangat direkomendasikan!"</p>
                     <p class="font-semibold">Aisyah L.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <i class="fas fa-user-circle text-blue-600 text-5xl mb-4"></i>
+                    <img src="https://images.unsplash.com/photo-1652946619040-1388aa7e819f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Illustrasi Paket Umroh Plus Wisata" class="w-full h-48 mx-auto mb-4 object-cover">
+                        <div class="flex justify-center mb-4">
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                            <span class="text-3xl text-yellow-500">&#9733;</span>
+                        </div>
                     <p class="italic mb-4">"Layanan yang diberikan sangat memuaskan. Mulai dari pengurusan visa hingga
                         perjalanan pulang, semua berjalan lancar dan nyaman."</p>
                     <p class="font-semibold">Hendri T.</p>
