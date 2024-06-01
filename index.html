@@ -173,11 +173,13 @@
                 </div>
             </div>
             <div class="mt-6 text-center flex items-center justify-center gap-2">
-                <button class="bg-gray-400 text-white font-bold rounded-full h-12 w-12 flex justify-center items-center">
-                    <i class="fas fa-arrow-left fa-lg text-white"></i>
+                <button id="katalog-button-prev"
+                    class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center">
+                    <i class="fas fa-arrow-left fa-md"></i>
                 </button>
-                <button class="bg-gray-400 text-white font-bold rounded-full h-12 w-12 flex justify-center items-center">
-                    <i class="fas fa-arrow-right fa-lg"></i>
+                <button id="katalog-button-next"
+                    class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center">
+                    <i class="fas fa-arrow-right fa-md"></i>
                 </button>
             </div>
         </div>
@@ -225,6 +227,9 @@
 
 
 <script>
+    const katalogBtnPrev = document.querySelector('#katalog-button-prev')
+    const katalogBtnNext = document.querySelector('#katalog-button-next')
+
     document.addEventListener('DOMContentLoaded', function () {
         new Splide('#hero-slider', {
             type: 'loop',
@@ -237,7 +242,7 @@
             },
         }).mount();
 
-        new Splide('#katalog-slider', {
+        const katalogSlider = new Splide('#katalog-slider', {
             type: 'loop',
             perPage: 3,
             gap: '1em',
@@ -253,6 +258,14 @@
             autoplay: true,
             pagination: false
         }).mount();
+
+        katalogBtnPrev.addEventListener('click', () => {
+            katalogSlider.go('<')
+        })
+
+        katalogBtnNext.addEventListener('click', () => {
+            katalogSlider.go('>')
+        })
     });
 </script>
 
