@@ -94,8 +94,13 @@
   </head>
 
   <body class="bg-gray-100">
+    <!-- Add skip to main content link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only"
+      >Skip to main content</a
+    >
+
     <!-- Hero Section -->
-    <section class="splide" id="hero-slider">
+    <section class="splide" id="hero-slider" aria-label="Hero Slider">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide slide-bg-1 text-white h-screen relative">
@@ -169,389 +174,476 @@
       </div>
     </section>
 
-    <!-- Daftar Layanan -->
-    <section class="py-20 px-6 md:px-0">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">
-          Layanan Unggulan Kami
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal-1">
-            <i class="fas fa-plane text-black text-5xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
-            <p>
-              Nikmati layanan eksklusif dengan akomodasi terbaik, bimbingan dari
-              ustadz berpengalaman, dan fasilitas premium lainnya.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal-2">
-            <i class="fas fa-kaaba text-black text-5xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
-            <p>
-              Paket terjangkau dengan fasilitas lengkap untuk memastikan
-              kenyamanan dan keamanan ibadah Anda.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal-3">
-            <i class="fas fa-mosque text-black text-5xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-4">Bimbingan Manasik Haji</h3>
-            <p>
-              Pelatihan intensif untuk memahami dan melaksanakan setiap rukun
-              dan wajib haji dengan benar.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center reveal-4">
-            <i class="fas fa-passport text-black text-5xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-4">Layanan Visa dan Dokumen</h3>
-            <p>
-              Kami mengurus semua keperluan administrasi dan dokumen perjalanan
-              Anda dengan cepat dan tepat.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Katalog Layanan -->
-    <section class="py-20 bg-gray-100 px-6 md:px-0">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">
-          Katalog Layanan Kami
-        </h2>
-        <div class="splide" id="katalog-slider">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <!-- Safara -->
-              <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
-                <div class="relative h-48 w-full mx-auto mb-4">
-                  <div
-                    class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
-                  >
-                    <h1 class="font-basmala text-5xl text-white z-10">
-                      Safara
-                    </h1>
-                  </div>
-                  <img
-                    src="/src/images/slider-image-1.webp"
-                    alt="Illustrasi Paket Haji Reguler"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Paket Umroh - Safara</h3>
-                <p>Tipe kamar:</p>
-                <ul class="list-disc pl-6 text-left">
-                  <li>quad/4org - <b class="underline">Rp. 28.476.000</b></li>
-                  <li>triple/3org - <b class="underline">Rp. 29.976.000</b></li>
-                  <li>double/2org - <b class="underline">Rp. 31.676.000</b></li>
-                </ul>
-              </li>
-
-              <!-- Safawi -->
-              <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
-                <div class="relative h-48 w-full mx-auto mb-4">
-                  <div
-                    class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
-                  >
-                    <h1 class="font-basmala text-5xl text-white z-10">
-                      Safawi
-                    </h1>
-                  </div>
-                  <img
-                    src="/src/images/slider-image-2.webp"
-                    alt="Illustrasi Paket Safawi"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Paket Umroh - Safawi</h3>
-                <p>Tipe kamar:</p>
-                <ul class="list-disc pl-6 text-left">
-                  <li>quad/4org - <b class="underline">Rp. 31.476.000</b></li>
-                  <li>triple/3org - <b class="underline">Rp. 32.976.000</b></li>
-                  <li>double/2org - <b class="underline">Rp. 34.676.000</b></li>
-                </ul>
-              </li>
-
-              <!-- Sukari -->
-              <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
-                <div class="relative h-48 w-full mx-auto mb-4">
-                  <div
-                    class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
-                  >
-                    <h1 class="font-basmala text-5xl text-white z-10">
-                      Sukari
-                    </h1>
-                  </div>
-                  <img
-                    src="/src/images/slider-image-3.webp"
-                    alt="Illustrasi Paket Sukari"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Paket Umroh - Sukari</h3>
-                <p>Tipe kamar:</p>
-                <ul class="list-disc pl-6 text-left">
-                  <li>quad/4org - <b class="underline">Rp. 34.776.000</b></li>
-                  <li>triple/3org - <b class="underline">Rp. 36.476.000</b></li>
-                  <li>double/2org - <b class="underline">Rp. 38.276.000</b></li>
-                </ul>
-              </li>
-
-              <!-- Majol -->
-              <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
-                <div class="relative h-48 w-full mx-auto mb-4">
-                  <div
-                    class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
-                  >
-                    <h1 class="font-basmala text-5xl text-white z-10">Majol</h1>
-                  </div>
-                  <img
-                    src="/src/images/slider-image-1.webp"
-                    alt="Illustrasi Paket Majol"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Paket Umroh - Majol</h3>
-                <p>Tipe kamar:</p>
-                <ul class="list-disc pl-6 text-left">
-                  <li>quad/4org - <b class="underline">Rp. 39.976.000</b></li>
-                  <li>triple/3org - <b class="underline">Rp. 41.976.000</b></li>
-                  <li>double/2org - <b class="underline">Rp. 44.976.000</b></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mt-6 text-center flex items-center justify-center gap-2">
-          <button
-            id="katalog-button-prev"
-            class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center"
-          >
-            <i class="fas fa-arrow-left fa-md"></i>
-          </button>
-          <button
-            id="katalog-button-next"
-            class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center"
-          >
-            <i class="fas fa-arrow-right fa-md"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Review Customer -->
-    <section class="relative bg-gray-200 py-20 px-6 md:px-0">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">
-          Apa Kata Jama'ah Kami?
-        </h2>
-
-        <!-- Full-width video embed -->
-        <div class="bg-white p-6 rounded-lg shadow-lg mb-12">
-          <div class="relative video-container mb-4">
-            <div class="plyr__video-embed" id="player-main">
-              <iframe
-                src="https://www.youtube.com/embed/jmJj9dp6huY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-                allowfullscreen
-                allowtransparency
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-          <div class="flex justify-center mb-4">
-            <span class="text-3xl text-yellow-500">★</span>
-            <span class="text-3xl text-yellow-500">★</span>
-            <span class="text-3xl text-yellow-500">★</span>
-            <span class="text-3xl text-yellow-500">★</span>
-            <span class="text-3xl text-yellow-500">★</span>
-          </div>
-          <p class="font-semibold mt-4 text-center">
-            UMBAST 07 September 2022 - Agenda saat Umroh bersama Samira Travel,
-            Pemaknaan Kota Suci Madinnah
-          </p>
-        </div>
-
-        <!-- Three video embeds in a row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="relative video-container mb-4">
-              <div class="plyr__video-embed" id="player1">
-                <iframe
-                  src="https://www.youtube.com/embed/Qy62gmBwNVg?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-                  allowfullscreen
-                  allowtransparency
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-            <div class="flex justify-center mb-4">
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-            </div>
-            <p class="font-semibold mt-4 text-center">
-              testimoni dari Jamaah Umroh Samira Travel yang mengikuti Manasik
-              Akbar di Jakarta Islamic Center pada 14 Agustus 2022 lalu
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="relative video-container mb-4">
-              <div class="plyr__video-embed" id="player2">
-                <iframe
-                  src="https://www.youtube.com/embed/AUGsCL3xBCA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-                  allowfullscreen
-                  allowtransparency
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-            <div class="flex justify-center mb-4">
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-            </div>
-            <p class="font-semibold mt-4 text-center">
-              Testimoni lainnya dari jamaah samira travel, pada 8 Mei 2020 di
-              depan Abraj Al Bait
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="relative video-container mb-4">
-              <div class="plyr__video-embed" id="player3">
-                <iframe
-                  src="https://www.youtube.com/embed/oyGY24Q1X7I?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-                  allowfullscreen
-                  allowtransparency
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-            <div class="flex justify-center mb-4">
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-              <span class="text-3xl text-yellow-500">★</span>
-            </div>
-            <p class="font-semibold mt-4 text-center">
-              Testimoni lainnya dari jamaah samira travel, pada 8 Mei 2020 di
-              depan ka'bah
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section
-      class="relative h-screen w-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center overflow-hidden"
-    >
-      <div class="absolute inset-0 z-0">
-        <img
-          src="/src/images/slider-image-1.webp"
-          alt="Background"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
-      <div class="container mx-auto px-4 relative z-20 text-white">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Wujudkan Perjalanan Suci Anda Sekarang
+    <main id="main-content">
+      <!-- Daftar Layanan -->
+      <section class="py-20 px-6 md:px-0" aria-labelledby="services-heading">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Layanan Unggulan Kami
           </h2>
-          <p class="text-xl mb-10 leading-relaxed">
-            Jangan lewatkan kesempatan untuk menunaikan ibadah haji dengan
-            kenyamanan dan bimbingan terbaik. Tim kami siap membantu Anda
-            mewujudkan perjalanan suci yang tak terlupakan.
-          </p>
-          <a
-            href="#"
-            class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            Ajukan Keberangkatan
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontak -->
-    <section id="contact" class="py-20 bg-gray-100">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">Hubungi Kami</h2>
-        <div class="flex flex-col lg:flex-row gap-12">
-          <!-- Google Map -->
-          <div
-            class="w-full lg:w-1/2 h-96 lg:h-auto rounded-lg overflow-hidden shadow-lg"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed/v1/place?q=Jl.+Utama+Sukaraya,+Perumahan+Sukaraya+Indah,+Kec.+Karangbahagia,+Kab.+Bekasi,+17530.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <!-- Contact Information -->
-          <div class="w-full lg:w-1/2">
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <h3 class="text-2xl font-semibold mb-8 text-blue-600">
-                Informasi Kontak
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg text-center reveal-1"
+              role="article"
+            >
+              <i
+                class="fas fa-plane text-black text-5xl mb-4"
+                aria-hidden="true"
+              ></i>
+              <h3 class="text-xl font-semibold mb-4">Paket Haji Plus</h3>
+              <p>
+                Nikmati layanan eksklusif dengan akomodasi terbaik, bimbingan
+                dari ustadz berpengalaman, dan fasilitas premium lainnya.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg text-center reveal-2"
+              role="article"
+            >
+              <i
+                class="fas fa-kaaba text-black text-5xl mb-4"
+                aria-hidden="true"
+              ></i>
+              <h3 class="text-xl font-semibold mb-4">Paket Haji Reguler</h3>
+              <p>
+                Paket terjangkau dengan fasilitas lengkap untuk memastikan
+                kenyamanan dan keamanan ibadah Anda.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg text-center reveal-3"
+              role="article"
+            >
+              <i
+                class="fas fa-mosque text-black text-5xl mb-4"
+                aria-hidden="true"
+              ></i>
+              <h3 class="text-xl font-semibold mb-4">Bimbingan Manasik Haji</h3>
+              <p>
+                Pelatihan intensif untuk memahami dan melaksanakan setiap rukun
+                dan wajib haji dengan benar.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg text-center reveal-4"
+              role="article"
+            >
+              <i
+                class="fas fa-passport text-black text-5xl mb-4"
+                aria-hidden="true"
+              ></i>
+              <h3 class="text-xl font-semibold mb-4">
+                Layanan Visa dan Dokumen
               </h3>
-              <ul class="space-y-6">
-                <li class="flex items-center">
-                  <div class="bg-blue-100 rounded-full p-3 mr-4">
-                    <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+              <p>
+                Kami mengurus semua keperluan administrasi dan dokumen
+                perjalanan Anda dengan cepat dan tepat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Katalog Layanan -->
+      <section
+        class="py-20 bg-gray-100 px-6 md:px-0"
+        aria-labelledby="catalog-heading"
+      >
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Katalog Layanan Kami
+          </h2>
+          <div class="splide" id="katalog-slider" aria-label="Catalog Slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Safara -->
+                <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                  <div class="relative h-48 w-full mx-auto mb-4">
+                    <div
+                      class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
+                    >
+                      <h1 class="font-basmala text-5xl text-white z-10">
+                        Safara
+                      </h1>
+                    </div>
+                    <img
+                      src="/src/images/slider-image-1.webp"
+                      alt="Illustrasi Paket Haji Reguler"
+                      class="w-full h-full object-cover"
+                    />
                   </div>
-                  <div>
-                    <p class="text-sm text-gray-600 mb-1">Telepon</p>
-                    <p class="text-lg font-medium">+625864682688</p>
-                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Paket Umroh - Safara
+                  </h3>
+                  <p>Tipe kamar:</p>
+                  <ul class="list-disc pl-6 text-left">
+                    <li>quad/4org - <b class="underline">Rp. 28.476.000</b></li>
+                    <li>
+                      triple/3org - <b class="underline">Rp. 29.976.000</b>
+                    </li>
+                    <li>
+                      double/2org - <b class="underline">Rp. 31.676.000</b>
+                    </li>
+                  </ul>
                 </li>
-                <li class="flex items-center">
-                  <div class="bg-blue-100 rounded-full p-3 mr-4">
-                    <i class="fab fa-whatsapp text-blue-600 text-2xl"></i>
+
+                <!-- Safawi -->
+                <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                  <div class="relative h-48 w-full mx-auto mb-4">
+                    <div
+                      class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
+                    >
+                      <h1 class="font-basmala text-5xl text-white z-10">
+                        Safawi
+                      </h1>
+                    </div>
+                    <img
+                      src="/src/images/slider-image-2.webp"
+                      alt="Illustrasi Paket Safawi"
+                      class="w-full h-full object-cover"
+                    />
                   </div>
-                  <div>
-                    <p class="text-sm text-gray-600 mb-1">WhatsApp</p>
-                    <p class="text-lg font-medium">+6287882826128</p>
-                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Paket Umroh - Safawi
+                  </h3>
+                  <p>Tipe kamar:</p>
+                  <ul class="list-disc pl-6 text-left">
+                    <li>quad/4org - <b class="underline">Rp. 31.476.000</b></li>
+                    <li>
+                      triple/3org - <b class="underline">Rp. 32.976.000</b>
+                    </li>
+                    <li>
+                      double/2org - <b class="underline">Rp. 34.676.000</b>
+                    </li>
+                  </ul>
                 </li>
-                <li class="flex items-center">
-                  <div class="bg-blue-100 rounded-full p-3 mr-4">
-                    <i class="fas fa-envelope text-blue-600 text-xl"></i>
+
+                <!-- Sukari -->
+                <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                  <div class="relative h-48 w-full mx-auto mb-4">
+                    <div
+                      class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
+                    >
+                      <h1 class="font-basmala text-5xl text-white z-10">
+                        Sukari
+                      </h1>
+                    </div>
+                    <img
+                      src="/src/images/slider-image-3.webp"
+                      alt="Illustrasi Paket Sukari"
+                      class="w-full h-full object-cover"
+                    />
                   </div>
-                  <div>
-                    <p class="text-sm text-gray-600 mb-1">Email</p>
-                    <p class="text-lg font-medium">
-                      samiratravelsukaraya@gmail.com
-                    </p>
-                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Paket Umroh - Sukari
+                  </h3>
+                  <p>Tipe kamar:</p>
+                  <ul class="list-disc pl-6 text-left">
+                    <li>quad/4org - <b class="underline">Rp. 34.776.000</b></li>
+                    <li>
+                      triple/3org - <b class="underline">Rp. 36.476.000</b>
+                    </li>
+                    <li>
+                      double/2org - <b class="underline">Rp. 38.276.000</b>
+                    </li>
+                  </ul>
                 </li>
-                <li class="flex items-center">
-                  <div class="bg-blue-100 rounded-full p-3 mr-4">
-                    <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+
+                <!-- Majol -->
+                <li class="splide__slide bg-white p-6 rounded-lg shadow-lg">
+                  <div class="relative h-48 w-full mx-auto mb-4">
+                    <div
+                      class="h-full w-full bg-opacity-30 bg-black z-10 absolute top-0 left-0 flex justify-center items-center"
+                    >
+                      <h1 class="font-basmala text-5xl text-white z-10">
+                        Majol
+                      </h1>
+                    </div>
+                    <img
+                      src="/src/images/slider-image-1.webp"
+                      alt="Illustrasi Paket Majol"
+                      class="w-full h-full object-cover"
+                    />
                   </div>
-                  <div>
-                    <p class="text-sm text-gray-600 mb-1">Alamat</p>
-                    <p class="text-lg font-medium">
-                      Jl. Utama Sukaraya, Perumahan Sukaraya Indah, Kec.
-                      Karangbahagia, Kab. Bekasi, 17530.
-                    </p>
-                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Paket Umroh - Majol
+                  </h3>
+                  <p>Tipe kamar:</p>
+                  <ul class="list-disc pl-6 text-left">
+                    <li>quad/4org - <b class="underline">Rp. 39.976.000</b></li>
+                    <li>
+                      triple/3org - <b class="underline">Rp. 41.976.000</b>
+                    </li>
+                    <li>
+                      double/2org - <b class="underline">Rp. 44.976.000</b>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="mt-6 text-center flex items-center justify-center gap-2">
+            <button
+              id="katalog-button-prev"
+              class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center"
+              aria-label="Previous slide"
+            >
+              <i class="fas fa-arrow-left fa-md" aria-hidden="true"></i>
+            </button>
+            <button
+              id="katalog-button-next"
+              class="bg-gray-400 text-white font-bold rounded-full h-8 w-8 flex justify-center items-center"
+              aria-label="Next slide"
+            >
+              <i class="fas fa-arrow-right fa-md" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Review Customer -->
+      <section
+        class="relative bg-gray-200 py-20 px-6 md:px-0"
+        aria-labelledby="reviews-heading"
+      >
+        <div class="container mx-auto">
+          <h2 id="reviews-heading" class="text-3xl font-bold text-center mb-12">
+            Apa Kata Jama'ah Kami?
+          </h2>
+
+          <!-- Full-width video embed -->
+          <div class="bg-white p-6 rounded-lg shadow-lg mb-12">
+            <div class="relative video-container mb-4">
+              <div class="plyr__video-embed" id="player-main">
+                <iframe
+                  src="https://www.youtube.com/embed/jmJj9dp6huY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                  allowfullscreen
+                  allowtransparency
+                  allow="autoplay"
+                  title="Iframe Testimonial 1"
+                ></iframe>
+              </div>
+            </div>
+            <div class="flex justify-center mb-4">
+              <span class="text-3xl text-yellow-500">★</span>
+              <span class="text-3xl text-yellow-500">★</span>
+              <span class="text-3xl text-yellow-500">★</span>
+              <span class="text-3xl text-yellow-500">★</span>
+              <span class="text-3xl text-yellow-500">★</span>
+            </div>
+            <p class="font-semibold mt-4 text-center">
+              UMBAST 07 September 2022 - Agenda saat Umroh bersama Samira
+              Travel, Pemaknaan Kota Suci Madinnah
+            </p>
+          </div>
+
+          <!-- Three video embeds in a row -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="relative video-container mb-4">
+                <div class="plyr__video-embed" id="player1">
+                  <iframe
+                    src="https://www.youtube.com/embed/Qy62gmBwNVg?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay"
+                    title="Iframe testimonial 2"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="flex justify-center mb-4">
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+              </div>
+              <p class="font-semibold mt-4 text-center">
+                testimoni dari Jamaah Umroh Samira Travel yang mengikuti Manasik
+                Akbar di Jakarta Islamic Center pada 14 Agustus 2022 lalu
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="relative video-container mb-4">
+                <div class="plyr__video-embed" id="player2">
+                  <iframe
+                    src="https://www.youtube.com/embed/AUGsCL3xBCA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay"
+                    title="Iframe testimonial 3"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="flex justify-center mb-4">
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+              </div>
+              <p class="font-semibold mt-4 text-center">
+                Testimoni lainnya dari jamaah samira travel, pada 8 Mei 2020 di
+                depan Abraj Al Bait
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="relative video-container mb-4">
+                <div class="plyr__video-embed" id="player3">
+                  <iframe
+                    src="https://www.youtube.com/embed/oyGY24Q1X7I?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay"
+                    title="Iframe testimonial 4"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="flex justify-center mb-4">
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+                <span class="text-3xl text-yellow-500">★</span>
+              </div>
+              <p class="font-semibold mt-4 text-center">
+                Testimoni lainnya dari jamaah samira travel, pada 8 Mei 2020 di
+                depan ka'bah
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section
+        class="relative h-screen w-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center overflow-hidden"
+        aria-labelledby="cta-heading"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            src="/src/images/slider-image-1.webp"
+            alt="Background"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div class="container mx-auto px-4 relative z-20 text-white">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2
+              id="cta-heading"
+              class="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            >
+              Wujudkan Perjalanan Suci Anda Sekarang
+            </h2>
+            <p class="text-xl mb-10 leading-relaxed">
+              Jangan lewatkan kesempatan untuk menunaikan ibadah haji dengan
+              kenyamanan dan bimbingan terbaik. Tim kami siap membantu Anda
+              mewujudkan perjalanan suci yang tak terlupakan.
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              Ajukan Keberangkatan
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section
+        id="contact"
+        class="py-20 bg-gray-100"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-16">Hubungi Kami</h2>
+          <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Google Map -->
+            <div
+              class="w-full lg:w-1/2 h-96 lg:h-auto rounded-lg overflow-hidden shadow-lg"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Jl.+Utama+Sukaraya,+Perumahan+Sukaraya+Indah,+Kec.+Karangbahagia,+Kab.+Bekasi,+17530.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                title="Iframe Google Maps"
+              ></iframe>
+            </div>
+            <!-- Contact Information -->
+            <div class="w-full lg:w-1/2">
+              <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-8 text-blue-600">
+                  Informasi Kontak
+                </h3>
+                <ul class="space-y-6">
+                  <li class="flex items-center">
+                    <div class="bg-blue-100 rounded-full p-3 mr-4">
+                      <i
+                        class="fas fa-phone-alt text-blue-600 text-xl"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-600 mb-1">Telepon</p>
+                      <p class="text-lg font-medium">+625864682688</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="bg-blue-100 rounded-full p-3 mr-4">
+                      <i
+                        class="fab fa-whatsapp text-blue-600 text-2xl"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-600 mb-1">WhatsApp</p>
+                      <p class="text-lg font-medium">+6287882826128</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="bg-blue-100 rounded-full p-3 mr-4">
+                      <i
+                        class="fas fa-envelope text-blue-600 text-xl"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-600 mb-1">Email</p>
+                      <p class="text-lg font-medium">
+                        samiratravelsukaraya@gmail.com
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="bg-blue-100 rounded-full p-3 mr-4">
+                      <i
+                        class="fas fa-map-marker-alt text-blue-600 text-xl"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-600 mb-1">Alamat</p>
+                      <p class="text-lg font-medium">
+                        Jl. Utama Sukaraya, Perumahan Sukaraya Indah, Kec.
+                        Karangbahagia, Kab. Bekasi, 17530.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-200 py-8">
+    <footer class="bg-gray-200 py-8" role="contentinfo">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="text-2xl font-bold mb-4 md:mb-0">
