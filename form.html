@@ -117,13 +117,18 @@
               class="block text-sm font-medium text-gray-700 mb-1"
               >Paket Umroh</label
             >
-            <input
-              type="text"
+            <select
               id="paketUmroh"
               name="paketUmroh"
               required
               class="w-full px-3 py-2 bg-gray-100 rounded-md focus:bg-white transition duration-300 ease-in-out"
-            />
+            >
+              <option value="">Pilih Paket Umroh</option>
+              <option value="safara">Safara</option>
+              <option value="safawi">Safawi</option>
+              <option value="sukari">Sukari</option>
+              <option value="majol">Majol</option>
+            </select>
             <span class="error-message" id="paketUmroh-error"></span>
           </div>
           <div>
@@ -148,10 +153,11 @@
               >No KTP / SIM</label
             >
             <input
-              type="text"
+              type="number"
               id="noKtpSim"
               name="noKtpSim"
               required
+              maxlength="16"
               class="w-full px-3 py-2 bg-gray-100 rounded-md focus:bg-white transition duration-300 ease-in-out"
             />
             <span class="error-message" id="noKtpSim-error"></span>
@@ -212,6 +218,7 @@
               id="noHp"
               name="noHp"
               required
+              pattern="[0-9]+"
               class="w-full px-3 py-2 bg-gray-100 rounded-md focus:bg-white transition duration-300 ease-in-out"
             />
             <span class="error-message" id="noHp-error"></span>

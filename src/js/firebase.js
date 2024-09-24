@@ -18,6 +18,22 @@ const db = getFirestore(app);
 
 let formData;
 
+document.querySelector('#noKtpSim').addEventListener('input', function (e) {
+    const value = e.target.value
+
+    if (value.length >= 16) {
+        e.target.value = value.slice(0, 16)
+    }
+})
+
+document.querySelector('#noHp').addEventListener('input', function (e) {
+    const value = e.target.value
+
+    if (value.length >= 18) {
+        e.target.value = value.slice(0, 20)
+    }
+})
+
 document.getElementById('jamaahForm').addEventListener('submit', async function (e) {
     e.preventDefault();
     formData = new FormData(this);
@@ -26,24 +42,26 @@ document.getElementById('jamaahForm').addEventListener('submit', async function 
     const originalButtonText = submitButton.textContent;
     submitButton.textContent = 'Submitting...';
     submitButton.style.opacity = 0.5
+    submitButton.style.cursor = 'not-allowed'
     submitButton.disabled = true;
 
     try {
         const uploadedFiles = await uploadFiles();
         const submissionData = await prepareSubmissionData(uploadedFiles);
+        await submitToFirestore(submissionData)
 
-        if (await submitToFirestore(submissionData)) {
-            alert('Form submitted successfully!');
-            this.reset();
-            document.querySelectorAll('.file-preview').forEach(preview => preview.remove());
-            document.querySelectorAll('.file-upload-text').forEach(text => text.textContent = 'Upload File');
-        }
+        alert('Berhasil diajukan!');
+        this.reset();
+        document.querySelectorAll('.file-preview').forEach(preview => preview.remove());
+        document.querySelectorAll('.file-upload-text').forEach(text => text.textContent = 'Upload File');
+
     } catch (error) {
         console.error("Error submitting form:", error);
         alert('An error occurred while submitting the form. Please try again.');
     } finally {
         submitButton.textContent = originalButtonText;
         submitButton.style.opacity = 1
+        submitButton.style.cursor = 'pointer'
         submitButton.disabled = false;
     }
 });
