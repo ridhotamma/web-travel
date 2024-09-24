@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Basmala';
+  src: url('../fonts/Basmala.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.slide-bg-1 {
+  background-image: url('../images/bg-image-1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-bg-2 {
+  background-image: url('../images/bg-image-2.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-bg-3 {
+  background-image: url('../images/bg-image-3.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #1c64f2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e5e7eb;
+}
+
+.font-basmala {
+  font-family: basmala, sans-serif;
+}
